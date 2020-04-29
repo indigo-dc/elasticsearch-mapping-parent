@@ -62,14 +62,11 @@
     </developers>
 
     <distributionManagement>
-        <repository>
-            <id>repo.opensource.fastconnect.org</id>
-            <url>https://fastconnect.org/maven/content/repositories/opensource</url>
-        </repository>
-        <snapshotRepository>
-            <id>repo.opensource.snapshot.fastconnect.org</id>
-            <url>https://fastconnect.org/maven/content/repositories/opensource-snapshot</url>
-        </snapshotRepository>
+       <repository>
+         <id>github-indigodc-a4c-elasticsearchmapping</id>
+         <name>GitHub IndigoDC A4C elasticSearchmapping Apache Maven Packages</name>
+         <url>https://maven.pkg.github.com/indigo-dc/elasticsearch-mapping-parent</url>
+       </repository>
     </distributionManagement>
 
     <build>

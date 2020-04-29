@@ -21,6 +21,7 @@ import org.elasticsearch.mapping.model.Address;
 import org.elasticsearch.mapping.model.Person;
 import org.elasticsearch.search.sort.SortBuilders;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -33,12 +34,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:elasticsearch-test-context.xml")
+@Ignore
 public class ElasticSearchInsertMappingTest {
-    @Resource
+    @Autowired
     private ElasticSearchClient esClient;
-    @Resource
+    @Autowired
     private MappingBuilder mappingBuilder;
-    @Resource
+    @Autowired
     private QueryHelper queryHelper;
     private final ObjectMapper jsonMapper = new ObjectMapper();
 
